@@ -1,6 +1,6 @@
 body {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 3fr;
   height: 100vh;
   width: 100vw;
@@ -29,4 +29,26 @@ table {
 
 td {
   padding: 1rem;
+}
+
+.add-book {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+  font-size: large;
+  font-weight: bold;
+}
+
+.book-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
 }

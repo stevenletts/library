@@ -6,8 +6,38 @@
     <title>Library</title>
   </head>
   <body>
+    <div class="add-book">Add a book</div>
     <div class="header">
       <h1>Library</h1>
+    </div>
+    <div class="book-form">
+      <form action="add-book">
+        <div class="input-block">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" required />
+        </div>
+        <div class="input-block">
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" required />
+        </div>
+        <div class="input-block">
+          <label for="pages">Pages</label>
+          <input type="text" name="pages" id="pages" required />
+        </div>
+        <div class="input-block">
+          <label for="read">Read?</label>
+          <input type="checkbox" name="read" id="read" required />
+        </div>
+
+        <div class="input-block">
+          <input
+            type="button"
+            name="submit-book"
+            id="submit-book"
+            value="Submit"
+          />
+        </div>
+      </form>
     </div>
     <div class="books">
       <!-- MAKE A TABLE TO CONTAIN EACH OBJECT ATTRIBUTE !-->
@@ -23,6 +53,7 @@
         </thead>
         <tbody></tbody>
       </table>
+      <!-- add submit button  -->
     </div>
     <script type="module" src="./main.js" defer></script>
   </body>
